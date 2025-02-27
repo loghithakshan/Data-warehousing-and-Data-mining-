@@ -1,0 +1,8 @@
+data <- c(200, 300, 400, 600, 1000)
+
+min_max_norm <- (data - min(data)) / (max(data) - min(data))
+
+
+z_score_norm <- scale(data)
+
+list(min_max_normalized = min_max_norm, z_score_normalized = z_score_norm)
